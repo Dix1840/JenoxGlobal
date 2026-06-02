@@ -19,29 +19,29 @@
             <div class="col-lg-6 mb-4">
                 <div class="product-gallery">
                     <div class="main-image mb-3">
-                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800" alt="1121 Basmati Rice" class="img-fluid rounded" id="mainProductImage">
+                        <img src="{{ asset('assets/images/rice-main.jpg') }}" alt="1121 Basmati Rice" class="img-fluid rounded" id="mainProductImage">
                     </div>
                     <div class="thumbnail-images d-flex gap-2">
-                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=200" alt="Thumbnail 1" class="img-fluid rounded thumbnail" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;" onclick="changeMainImage(this.src.replace('w=200', 'w=800'))">
-                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=200" alt="Thumbnail 2" class="img-fluid rounded thumbnail" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;" onclick="changeMainImage(this.src.replace('w=200', 'w=800'))">
-                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=200" alt="Thumbnail 3" class="img-fluid rounded thumbnail" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;" onclick="changeMainImage(this.src.replace('w=200', 'w=800'))">
-                        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=200" alt="Thumbnail 4" class="img-fluid rounded thumbnail" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;" onclick="changeMainImage(this.src.replace('w=200', 'w=800'))">
+                        <img src="{{ asset('assets/images/rice-200.jpg') }}" alt="Thumbnail 1" class="img-fluid rounded thumbnail" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;" onclick="changeMainImage('{{ asset('assets/images/rice-main.jpg') }}')">
+                        <img src="{{ asset('assets/images/rice-200.jpg') }}" alt="Thumbnail 2" class="img-fluid rounded thumbnail" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;" onclick="changeMainImage('{{ asset('assets/images/rice-main.jpg') }}')">
+                        <img src="{{ asset('assets/images/rice-200.jpg') }}" alt="Thumbnail 3" class="img-fluid rounded thumbnail" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;" onclick="changeMainImage('{{ asset('assets/images/rice-main.jpg') }}')">
+                        <img src="{{ asset('assets/images/rice-200.jpg') }}" alt="Thumbnail 4" class="img-fluid rounded thumbnail" style="width: 100px; height: 100px; object-fit: cover; cursor: pointer;" onclick="changeMainImage('{{ asset('assets/images/rice-main.jpg') }}')">
                     </div>
                 </div>
             </div>
-            
+
             <!-- Product Information -->
             <div class="col-lg-6 mb-4">
                 <div class="product-info">
                     <span class="badge bg-primary-custom mb-2">Rice</span>
                     <h2 class="mb-3">1121 Basmati Rice</h2>
                     <p class="lead text-secondary-custom mb-3">Premium Extra Long Grain Aromatic Basmati Rice</p>
-                    
+
                     <div class="mb-4">
                         <h5>Product Description</h5>
                         <p class="text-muted">1121 Basmati Rice is the world's longest grain basmati rice known for its exceptional aroma, taste, and cooking properties. Sourced from the finest farms in the Himalayan region, this premium rice variety is perfect for biryani, pilaf, and other gourmet dishes. Each grain elongates up to 2.5 times its original length upon cooking, ensuring a fluffy and separate texture.</p>
                     </div>
-                    
+
                     <div class="mb-4">
                         <div class="row">
                             <div class="col-6">
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="mb-4">
                         <h5>Tags</h5>
                         <div>
@@ -74,7 +74,7 @@
                             <span class="badge bg-secondary-custom me-1">Premium</span>
                         </div>
                     </div>
-                    
+
                     <div class="d-flex gap-2 flex-wrap">
                         <a href="{{ url('contact') }}" class="btn btn-primary">
                             <i class="bi bi-file-earmark-text"></i> Request Quote
@@ -393,7 +393,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400'); height: 200px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-400.jpg') }}'); height: 200px;">
                     </div>
                     <div class="category-content" style="padding: 20px;">
                         <h5 class="category-title" style="font-size: 1.1rem;">Pusa Basmati Rice</h5>
@@ -404,7 +404,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400'); height: 200px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-400.jpg') }}'); height: 200px;">
                     </div>
                     <div class="category-content" style="padding: 20px;">
                         <h5 class="category-title" style="font-size: 1.1rem;">Long Grain Rice</h5>
@@ -415,7 +415,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400'); height: 200px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-400.jpg') }}'); height: 200px;">
                     </div>
                     <div class="category-content" style="padding: 20px;">
                         <h5 class="category-title" style="font-size: 1.1rem;">Parboiled Rice</h5>
@@ -426,7 +426,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400'); height: 200px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-400.jpg') }}'); height: 200px;">
                     </div>
                     <div class="category-content" style="padding: 20px;">
                         <h5 class="category-title" style="font-size: 1.1rem;">Brown Rice</h5>

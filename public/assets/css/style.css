@@ -22,20 +22,20 @@
     --warning-color: #F59E0B;
     --danger-color: #EF4444;
     --info-color: #3B82F6;
-    
+
     --font-primary: 'Poppins', sans-serif;
     --font-secondary: 'Inter', sans-serif;
-    
+
     --shadow-sm: 0 2px 8px rgba(10, 37, 64, 0.08);
     --shadow-md: 0 4px 16px rgba(10, 37, 64, 0.12);
     --shadow-lg: 0 8px 32px rgba(10, 37, 64, 0.16);
     --shadow-xl: 0 12px 48px rgba(10, 37, 64, 0.2);
     --shadow-glow: 0 0 20px rgba(201, 162, 39, 0.3);
-    
+
     --transition-fast: 0.2s ease;
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
-    
+
     --gradient-primary: linear-gradient(135deg, #0A2540 0%, #1a3a5c 100%);
     --gradient-secondary: linear-gradient(135deg, #C9A227 0%, #d4af37 100%);
     --gradient-hero: linear-gradient(135deg, rgba(10, 37, 64, 0.95) 0%, rgba(26, 58, 92, 0.85) 100%);
@@ -273,8 +273,8 @@ img {
 /* Hero Section */
 .hero-section {
     position: relative;
-    background: var(--gradient-hero),
-                url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920') center/cover no-repeat;
+    background: linear-gradient(135deg, rgba(10, 37, 64, 0.60) 0%, rgba(26, 58, 92, 0.70) 100%),
+                url('/assets/images/hero-background.png') center/cover no-repeat;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -1194,22 +1194,22 @@ img {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.1rem;
     }
-    
+
     .section-title h2 {
         font-size: 2rem;
     }
-    
+
     .nav-extra {
         flex-direction: column;
         align-items: stretch;
         margin-left: 0;
         margin-top: 20px;
     }
-    
+
     .btn-language,
     .btn-quote {
         width: 100%;
@@ -1222,54 +1222,54 @@ img {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .top-bar-social {
         justify-content: center;
         margin-top: 15px;
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
     }
-    
+
     .btn-primary,
     .btn-outline {
         width: 100%;
         text-align: center;
     }
-    
+
     .company-highlights {
         margin-top: 0;
         padding: 40px 0;
     }
-    
+
     .section {
         padding: 60px 0;
     }
-    
+
     .section-title h2 {
         font-size: 1.75rem;
     }
-    
+
     .footer-bottom-links {
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 15px;
     }
-    
+
     .about-banner h1,
     .contact-banner h1 {
         font-size: 2rem;
     }
-    
+
     .cta-title {
         font-size: 1.75rem;
     }
@@ -1279,15 +1279,15 @@ img {
     h1 { font-size: 2rem; }
     h2 { font-size: 1.75rem; }
     h3 { font-size: 1.5rem; }
-    
+
     .hero-title {
         font-size: 1.75rem;
     }
-    
+
     .highlight-number {
         font-size: 2rem;
     }
-    
+
     .contact-form-card,
     .contact-info-card {
         padding: 25px;

@@ -79,7 +79,7 @@
         <div class="row">
             <div class="col-lg-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800');">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-main.jpg') }}');">
                     </div>
                     <div class="category-content">
                         <h3 class="category-title">Rice Export</h3>
@@ -92,7 +92,7 @@
             </div>
             <div class="col-lg-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800');">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/lead-main.jpg') }}');">
                     </div>
                     <div class="category-content">
                         <h3 class="category-title">Lead Export</h3>

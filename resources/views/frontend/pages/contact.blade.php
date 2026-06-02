@@ -68,7 +68,7 @@
                         </div>
                         <div class="contact-info-content">
                             <h4>WhatsApp</h4>
-                            <p><a href="https://wa.me/97145555555">+971 4 555 5555</a></p>
+                            <p><a href="https://wa.me/{{ config('company.whatsapp') }}">+971 4 555 5555</a></p>
                         </div>
                     </div>
                     
@@ -230,7 +230,7 @@
     <div class="container">
         <div class="map-container">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1785103460977!2d55.26437531501173!3d25.19720198389413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sBusiness%20Bay%20-%20Dubai!5e0!3m2!1sen!2sae!4v1620000000000!5m2!1sen!2sae" 
+                src="{{ config('company.google_maps_url') }}" 
                 allowfullscreen="" 
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
@@ -312,7 +312,7 @@
             <a href="tel:+97145555555" class="btn btn-cta-white">
                 <i class="bi bi-telephone"></i> Call Us Now
             </a>
-            <a href="https://wa.me/97145555555" class="btn btn-cta-outline">
+            <a href="https://wa.me/{{ config('company.whatsapp') }}" class="btn btn-cta-outline">
                 <i class="bi bi-whatsapp"></i> WhatsApp Us
             </a>
         </div>

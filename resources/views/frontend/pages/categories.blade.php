@@ -22,12 +22,12 @@
             <!-- Rice Category -->
             <div class="col-lg-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800'); height: 300px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-main.jpg') }}'); height: 300px;">
                     </div>
                     <div class="category-content">
                         <h3 class="category-title">Rice Export</h3>
                         <p class="category-description">Premium quality Basmati and Non-Basmati rice varieties sourced from the finest farms, processed with strict quality control measures for international markets.</p>
-                        
+
                         <div class="mb-3">
                             <strong>Available Varieties:</strong>
                             <ul class="list-unstyled mt-2">
@@ -37,22 +37,22 @@
                                 <li><i class="bi bi-check-circle-fill text-secondary-custom me-2"></i> Brown Rice</li>
                             </ul>
                         </div>
-                        
+
                         <div class="mb-3">
                             <strong>Export Markets:</strong>
                             <p class="text-muted">Middle East, Europe, Africa, Americas, Asia</p>
                         </div>
-                        
+
                         <div class="mb-3">
                             <strong>Product Count:</strong>
                             <span class="badge bg-primary-custom">25+ Products</span>
                         </div>
-                        
+
                         <div class="mb-3">
                             <strong>HS Code:</strong>
                             <span class="text-muted">1006.30, 1006.20</span>
                         </div>
-                        
+
                         <div class="d-flex gap-2 flex-wrap">
                             <a href="{{ url('products?category=rice') }}" class="btn btn-primary">
                                 <i class="bi bi-box-seam"></i> View Products
@@ -64,16 +64,16 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Lead Category -->
             <div class="col-lg-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800'); height: 300px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/lead-main.jpg') }}'); height: 300px;">
                     </div>
                     <div class="category-content">
                         <h3 class="category-title">Lead Export</h3>
                         <p class="category-description">High-grade lead products including lead ore, lead ingots, and lead alloys for industrial applications worldwide with certified quality standards.</p>
-                        
+
                         <div class="mb-3">
                             <strong>Available Products:</strong>
                             <ul class="list-unstyled mt-2">
@@ -83,22 +83,22 @@
                                 <li><i class="bi bi-check-circle-fill text-secondary-custom me-2"></i> Lead Scrap</li>
                             </ul>
                         </div>
-                        
+
                         <div class="mb-3">
                             <strong>Export Markets:</strong>
                             <p class="text-muted">Asia, Europe, Middle East, Africa</p>
                         </div>
-                        
+
                         <div class="mb-3">
                             <strong>Product Count:</strong>
                             <span class="badge bg-primary-custom">15+ Products</span>
                         </div>
-                        
+
                         <div class="mb-3">
                             <strong>HS Code:</strong>
                             <span class="text-muted">7801.10, 7801.91</span>
                         </div>
-                        
+
                         <div class="d-flex gap-2 flex-wrap">
                             <a href="{{ url('products?category=lead') }}" class="btn btn-primary">
                                 <i class="bi bi-box-seam"></i> View Products
@@ -206,7 +206,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400'); height: 200px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-400.jpg') }}'); height: 200px;">
                     </div>
                     <div class="category-content" style="padding: 20px;">
                         <h5 class="category-title" style="font-size: 1.1rem;">1121 Basmati Rice</h5>
@@ -217,7 +217,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400'); height: 200px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-400.jpg') }}'); height: 200px;">
                     </div>
                     <div class="category-content" style="padding: 20px;">
                         <h5 class="category-title" style="font-size: 1.1rem;">Pusa Basmati Rice</h5>
@@ -228,7 +228,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400'); height: 200px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/lead-400.jpg') }}'); height: 200px;">
                     </div>
                     <div class="category-content" style="padding: 20px;">
                         <h5 class="category-title" style="font-size: 1.1rem;">Lead Ingots 99.97%</h5>
@@ -239,7 +239,7 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="category-card">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400'); height: 200px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/lead-400.jpg') }}'); height: 200px;">
                     </div>
                     <div class="category-content" style="padding: 20px;">
                         <h5 class="category-title" style="font-size: 1.1rem;">Lead Ore</h5>

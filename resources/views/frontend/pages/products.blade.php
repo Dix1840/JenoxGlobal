@@ -89,7 +89,7 @@
             <!-- Rice Products -->
             <div class="col-lg-4 col-md-6 mb-4 product-card" data-category="rice" data-hscode="1006.30" data-tags="basmati">
                 <div class="category-card h-100">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600'); height: 250px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-600.jpg') }}'); height: 250px;">
                     </div>
                     <div class="category-content">
                         <span class="badge bg-primary-custom mb-2">Rice</span>
@@ -111,7 +111,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4 product-card" data-category="rice" data-hscode="1006.30" data-tags="basmati">
                 <div class="category-card h-100">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600'); height: 250px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-600.jpg') }}'); height: 250px;">
                     </div>
                     <div class="category-content">
                         <span class="badge bg-primary-custom mb-2">Rice</span>
@@ -133,7 +133,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4 product-card" data-category="rice" data-hscode="1006.20" data-tags="non-basmati">
                 <div class="category-card h-100">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600'); height: 250px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-600.jpg') }}'); height: 250px;">
                     </div>
                     <div class="category-content">
                         <span class="badge bg-primary-custom mb-2">Rice</span>
@@ -155,7 +155,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4 product-card" data-category="rice" data-hscode="1006.20" data-tags="parboiled">
                 <div class="category-card h-100">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600'); height: 250px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/rice-600.jpg') }}'); height: 250px;">
                     </div>
                     <div class="category-content">
                         <span class="badge bg-primary-custom mb-2">Rice</span>
@@ -178,7 +178,7 @@
             <!-- Lead Products -->
             <div class="col-lg-4 col-md-6 mb-4 product-card" data-category="lead" data-hscode="7801.10" data-tags="ingots">
                 <div class="category-card h-100">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600'); height: 250px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/lead-600.jpg') }}'); height: 250px;">
                     </div>
                     <div class="category-content">
                         <span class="badge bg-warning text-dark mb-2">Lead</span>
@@ -200,7 +200,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4 product-card" data-category="lead" data-hscode="7801.91" data-tags="ore">
                 <div class="category-card h-100">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600'); height: 250px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/lead-600.jpg') }}'); height: 250px;">
                     </div>
                     <div class="category-content">
                         <span class="badge bg-warning text-dark mb-2">Lead</span>
@@ -222,7 +222,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4 product-card" data-category="lead" data-hscode="7801.10" data-tags="ingots">
                 <div class="category-card h-100">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600'); height: 250px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/lead-600.jpg') }}'); height: 250px;">
                     </div>
                     <div class="category-content">
                         <span class="badge bg-warning text-dark mb-2">Lead</span>
@@ -244,7 +244,7 @@
 
             <div class="col-lg-4 col-md-6 mb-4 product-card" data-category="lead" data-hscode="7801.99" data-tags="scrap">
                 <div class="category-card h-100">
-                    <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600'); height: 250px;">
+                    <div class="category-image" style="background-image: url('{{ asset('assets/images/lead-600.jpg') }}'); height: 250px;">
                     </div>
                     <div class="category-content">
                         <span class="badge bg-warning text-dark mb-2">Lead</span>
@@ -309,23 +309,23 @@ function filterProducts() {
     const hsCode = document.getElementById('hsCodeFilter').value;
     const tag = document.getElementById('tagFilter').value;
     const search = document.getElementById('searchFilter').value.toLowerCase();
-    
+
     const products = document.querySelectorAll('.product-card');
-    
+
     products.forEach(product => {
         const productCategory = product.getAttribute('data-category');
         const productHsCode = product.getAttribute('data-hscode');
         const productTags = product.getAttribute('data-tags');
         const productName = product.querySelector('.category-title').textContent.toLowerCase();
         const productDesc = product.querySelector('.category-description').textContent.toLowerCase();
-        
+
         let show = true;
-        
+
         if (category && productCategory !== category) show = false;
         if (hsCode && productHsCode !== hsCode) show = false;
         if (tag && !productTags.includes(tag)) show = false;
         if (search && !productName.includes(search) && !productDesc.includes(search)) show = false;
-        
+
         product.style.display = show ? 'block' : 'none';
     });
 }
@@ -336,7 +336,7 @@ function resetFilters() {
     document.getElementById('hsCodeFilter').value = '';
     document.getElementById('tagFilter').value = '';
     document.getElementById('searchFilter').value = '';
-    
+
     const products = document.querySelectorAll('.product-card');
     products.forEach(product => {
         product.style.display = 'block';

@@ -17,7 +17,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800" alt="JenoxGlobal Office" class="img-fluid rounded">
+                    <img src="{{ asset('assets/images/office.jpg') }}" alt="JenoxGlobal Office" class="img-fluid rounded">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -186,7 +186,7 @@
         <div class="row">
             <div class="col-lg-6 mb-4">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800" alt="Global Network" class="img-fluid rounded">
+                    <img src="{{ asset('assets/images/global-network.jpg') }}" alt="Global Network" class="img-fluid rounded">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -216,14 +216,14 @@
         <div class="row">
             <div class="col-lg-6 mb-4">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800" alt="Warehouse" class="img-fluid rounded mb-3">
+                    <img src="{{ asset('assets/images/warehouse.jpg') }}" alt="Warehouse" class="img-fluid rounded mb-3">
                     <h4 class="text-center">Modern Warehousing</h4>
                     <p class="text-center text-muted">Climate-controlled storage facilities ensuring product quality preservation</p>
                 </div>
             </div>
             <div class="col-lg-6 mb-4">
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1565040119328-37709b897bda?w=800" alt="Processing Unit" class="img-fluid rounded mb-3">
+                    <img src="{{ asset('assets/images/processing.jpg') }}" alt="Processing Unit" class="img-fluid rounded mb-3">
                     <h4 class="text-center">Processing Units</h4>
                     <p class="text-center text-muted">Advanced processing equipment with strict quality control measures</p>
                 </div>
@@ -243,7 +243,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="text-center">
                     <div class="team-image mb-3">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300" alt="CEO" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team-ceo.jpg') }}" alt="CEO" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
                     </div>
                     <h5>John Anderson</h5>
                     <p class="text-muted">Chief Executive Officer</p>
@@ -252,7 +252,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="text-center">
                     <div class="team-image mb-3">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300" alt="COO" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team-coo.jpg') }}" alt="COO" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
                     </div>
                     <h5>Sarah Mitchell</h5>
                     <p class="text-muted">Chief Operations Officer</p>
@@ -261,7 +261,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="text-center">
                     <div class="team-image mb-3">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300" alt="Sales Director" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team-sales.jpg') }}" alt="Sales Director" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
                     </div>
                     <h5>David Chen</h5>
                     <p class="text-muted">Sales Director</p>
@@ -270,7 +270,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="text-center">
                     <div class="team-image mb-3">
-                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300" alt="Quality Manager" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team-qa.jpg') }}" alt="Quality Manager" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
                     </div>
                     <h5>Emily Rodriguez</h5>
                     <p class="text-muted">Quality Assurance Manager</p>
